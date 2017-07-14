@@ -1,3 +1,4 @@
+<!项目经历：css冲突 ：（>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +10,7 @@
 <!Framework:bootstrap>
     <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <style type="text/css">
 	.clearfix{
@@ -34,28 +36,61 @@ p{
 span{
 	color: green;
 }*/
-.img{
+.icon{
 	width: 302px;
 	height: 121px;
 }
 </style>
 <style>
-.responsive img {
-    margin: 5px;
+/*作品展示*/
+div.img {
     border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+    width: 302px;
 }
-.responsive img:hover {
-    border: 1px solid #777;
+
+div.img:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-.responsive img img {
+
+div.img img {
     width: 100%;
     height: auto;
+
 }
-.responsive desc {
+
+div.desc {
     padding: 15px;
     text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 19.99999%;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 </style>
 <script type="text/javascript">
@@ -66,10 +101,10 @@ span{
 <body data-spy="scroll" data-target=".collapse navbar-collapse">
 <div class="container">
 	<div class="row clearfix">
-		<div class="col-md-12 column">
+		<div class="col-md-12 column" style="padding-right: 0px">
 			<nav class="navbar navbar-default  navbar-inverse navbar-fixed-top" role="navigation">
 				<div class="navbar-header">
-					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Person's Website</a>
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">汪明城(wmck)</a>
 				</div>
 				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -97,35 +132,63 @@ span{
 								<li>
 									 <a href="#campus">4.中南地区UI设计区域赛</a>
 								</li>
-								
 							</ul>
 						</li>
-					</ul>
-					<form class="navbar-form navbar-left" role="search">
-						<div class="form-group">
-							<input class="form-control" type="text" />
-						</div> <button type="submit" class="btn btn-default">Submit</button>
-					</form>
-					<ul class="nav navbar-nav navbar-right">
 						<li>
-							 <a href="#">Link</a>
+							 <a href="#practices">实习经历</a>
 						</li>
 						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">项目经历<strong class="caret"></strong></a>
 							<ul class="dropdown-menu">
 								<li>
-									 <a href="#">Action</a>
+									 <a href="#project">1.2016.12 - 2017.01	《个人受骗几率检测系统》	Java研发工程师</a>
 								</li>
 								<li>
-									 <a href="#">Another action</a>
+									 <a href="#project">2.2016.11 - 2016.12	《iUESC》— University Education of south china     前端开发工程师</a>
 								</li>
 								<li>
-									 <a href="#">Something else here</a>
+									 <a href="#project">3.2016.11 - 2016.02	新版《新闻发布系统》	PHP工程师</a>
 								</li>
 								<li class="divider">
 								</li>
 								<li>
-									 <a href="#">Separated link</a>
+									 <a href="#project">4.2017.05 - 2017.08	《船山学院招生管理系统》	Java工程师</a>
+								</li>
+								
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">获奖情况<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="#awards">1. 2017.05 - 2017.07《第十届中国大学生计算机设计大赛》中南地区赛 一等奖</a>
+								</li>
+								<li>
+									 <a href="#awards"> 2. 2016.10 - 2016.12《2016年软件设计创意大赛》 优胜奖</a>
+								</li>
+								<li>
+									 <a href="#awards">3. 2015.03 - 2015.10《第十二届“挑战杯”全国大学生课外学术科技作品竞赛》 优胜奖 </a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">自我评价<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="#comments">1.学习能力较强，“独立学习”</a>
+								</li>
+								<li>
+									 <a href="#comments">2.善于总结，并且乐于分享</a>
+								</li>
+								<li>
+									 <a href="#comments">3.爱好思维构图，经常将刚学习的知识，用Xmind或A4纸，画思维图</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									 <a href="#comments">4.喜欢关注新鲜事物，关注GitHub上的开源项目</a>
 								</li>
 							</ul>
 						</li>
@@ -141,7 +204,7 @@ span{
                               </video>
 						<div class="carousel-caption">
 							<h4>
-								Personal blog(wmc-github.github.io)
+								Personal blog(wmck.github.io)
 							</h4>
 							<p>
 								You can use the editor on GitHub to maintain and preview the content for your website in Markdown files.
@@ -154,7 +217,7 @@ span{
 	</div>
 </div>
 <div class="container" style="padding-left: 75px">
-	<div class="row clearfix">
+	<div class="row clearfix" style="background-color: #ffffff">
 		<div class="col-md-12 column">
 			<div class="jumbotron">
 				<h2>
@@ -173,7 +236,7 @@ span{
 				</p>
 				</br>
 				<p>
-					 <a class="btn btn-primary btn-large" href="#">Learn more</a>
+					 <a class="btn btn-primary btn-large" href="#">了解更多</a>
 				</p>
 			</div>
 		</div>
@@ -196,7 +259,7 @@ span{
 		    二、个人技能|<span>Per</span>so<span>n's</span> Sk<span>il</span>ls：
 		</h2>
 		<div class="col-md-6 column">
-			<img alt="140x140" src="images/教育.PNG" />
+			<img alt="140x140" src="images/teaching.png" />
 		</div>
 		<div class="col-md-6 column">
 			
@@ -220,11 +283,12 @@ span{
 		</div>
 		</div>
 	</div>
-	<div class="row clearfix" id="campus">
+	<div class="row clearfix" id="campus" style="margin-bottom: 100px;">
+	   <div class="col-md-12 column">
 		<h2>三、校内经历|Campus's Experience</h2>
 		    </br>
 		<div class="col-md-3 column">
-		    <div class="img">
+		    <div class="icon">
 			     <img src="images/ZTE.PNG" style="padding-left: 45%;padding-left: 25%;padding-top: 25px;">
 			</div>
 			<dl style="font-size: 16px">
@@ -239,7 +303,7 @@ span{
 				</dl>
 		</div>
 		<div class="col-md-3 column">
-		    <div class="img">
+		    <div class="icon">
 			     <img src="images/boom.PNG" style="padding-left: 25%;height: 120px;padding-top: 20px;">
 			</div>
 		    <dl style="font-size: 16px">
@@ -254,9 +318,9 @@ span{
 				</dd>
 		    </dl>
 		</div>
-				</br>
+		</br>
 		<div class="col-md-3 column">
-		    <div class="img">
+		    <div class="icon">
 			     <img src="images/usc.PNG" style="width: 270px;height: 80px">
 			</div>
 		    <dl style="font-size: 16px">
@@ -271,53 +335,159 @@ span{
 			</dl>
 		</div>
 		<div class="col-md-3 column">
-		    <div class="img">
+		    <div class="icon">
 			   <img src="images/ui.PNG" style="width: 270px;height: 80px">
 			</div>
 			<dl style="font-size: 16px">
 				<dt>
-					2017.03 - 2017.06	中南地区UI设计区域赛  UI设计成员
+					2017.03 - 2017.06	中南地区计算机设计区域赛  设计组成员
 				</dt> 
 				</br>
 				<dd>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.使用PS工具并结合团队的集体灵感，设计出的UI作品：《世界末日》，在中南区域赛中获得一等奖。
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.使用PS工具并结合团队的集体灵感，设计出的作品：《末日:倒计时》，在中南区域赛中获得一等奖。
 				</dd>
 				</dl>
 		</div>	
 	</div>
+   </div>
+   	<div class="row clearfix" id="practices">
+	<div class="col-md-12 column">
+    <div style="margin-bottom: 50px">
+    	<h2>四、实习经历|Internship experience</h2>
+    	</br>
+    	</br>
+        <p>2017.06.20-2017.06.30    湖南软测信息技术有限公司    前端开发工程师</p>
+        </br>
+        <p>1.在项目组长的带领下，负责《权限管理系统》视图层的开发，编写javascript与javaWeb中的EL表达式相结合，实现了不同角色的权限控制及相关视图的显示。</p>
+        </br>
+        </br>
+        <img src="images/soft.PNG">
+    </div>
+    </div>
+    </div>
 </div>
-<div class="container" style="padding-left: 75px">
+<div id="project" class="container" style="padding-left: 75px">
 	<div class="row clearfix">
-	<h2>四、项目经历Program's Experience</h2>
+	<div class="col-md-12 column">
+	<h2>五、项目经历Program's Experience</h2>
     </br>
-		<div class="col-md-4 column">
-		  	<div class="responsive">
-			  <div class="img">
-			    <a target="_blank" href="http://static.runoob.com/images/demo/demo1.jpg">
-			      <img src="http://static.runoob.com/images/demo/demo1.jpg" alt="图片文本描述" width="300" height="200">
-			    </a>
-			    <div class="desc">这里添加图片文本描述</div>
-			  </div>
-  		    </div>
-		<div class="col-md-4 column">
-			<div class="responsive">
-			  <div class="img">
-			    <a target="_blank" href="http://static.runoob.com/images/demo/demo1.jpg">
-			      <img src="http://static.runoob.com/images/demo/demo1.jpg" alt="图片文本描述" width="300" height="200">
-			    </a>
-			    <div class="desc">这里添加图片文本描述</div>
-			  </div>
-  		    </div>
+    <div class="col-md-3 column">
+	   <div class="responsive">
+       <div class="img">
+          <a target="_blank" href="#">
+          <img src="images/search.PNG" alt="Northern Lights" width="600" height="400">
+          </a>
+       <div class="desc" style="padding-top: 50px;height: 248px">1.在收集大量调查问卷后，主要负责java开发，以JavaWeb形式开发，使用Java Excel Api采集“个人受骗几率表”数据进行逻辑处理，“个人信息”与“个人受骗几率表”比对，能够准确获得个人受骗概率。
+          <a class="btn" href="#" style="float: left;padding-top: 45px">2016.12 - 2017.01	</a> <a class="btn btn-link" href="#" style="padding-top: 45px">Java研发工程师</a>
+          </p>
+       </div>
+       </div>
+       </div>
+    </div>
+	<div class="col-md-3 column">
+	    <div class="responsive">
+		  <div class="img">
+		    <a target="_blank" href="#">
+		      <img src="images/iuesc.PNG" alt="Northern Lights" width="600" height="400">
+		    </a>
+		    <div class="desc" style="padding-top: 30px">1.在团队协作中，主要负责《iUESC》网页的编码部分，并结合bootstrap，实现了相应式布局；使用html5的video标签替代flash；index.html代码1688行，任课老师奖励一本《动态网站开发教程（Dreamweaver+Mysql+PHP）》作为鼓励。
+		    <a class="btn" href="#" style="float: left;"></br>2016.11 - 2016.12</a> <a class="btn btn-link" href="#">前端开发工程师</a>
+		    </p></div>
+		  </div>
 		</div>
-		<div class="col-md-4 column">
-			<div class="responsive">
-			  <div class="img">
-			    <a target="_blank" href="http://static.runoob.com/images/demo/demo1.jpg">
-			      <img src="http://static.runoob.com/images/demo/demo1.jpg" alt="图片文本描述" width="300" height="200">
-			    </a>
-			    <div class="desc">这里添加图片文本描述</div>
-			  </div>
-  		    </div>
+	</div>
+	<div class="col-md-3 column">
+	  <div class="responsive">
+		  <div class="img">
+		    <a target="_blank" href="#">
+		      <img src="images/new.PNG" alt="Northern Lights" width="600" height="400">
+		    </a>
+		    <div class="desc" style="height: 218px">1.在对旧版系统进行重构时，负责重构代码，首次使用MVC框架，对旧版《新闻发布系统》进行了整改，解决了文件结构不清晰、代码冗余等问题，使其逻辑分明，运行效率大幅提高。
+		    <a class="btn" href="#" style="float: left;padding-top: 50px"></br>2016.11 - 2016.02</a> <a class="btn btn-link" href="#" style="padding-top: 50px">PHP工程师</a>
+		    </p></div>
+		  </div>
+		</div>
+	</div>
+	<div class="col-md-3 column">
+		<div class="responsive">
+		  <div class="img">
+		    <a target="_blank" href="#">
+		      <img src="images/csxy.PNG" alt="Northern Lights" width="600" height="400">
+		    </a>
+		    <div class="desc" style="padding-top: 55px;height: 256px">1.在4个伙伴的协作下，由于使用的是Spring MVC+Mybatis+Spring框架开发，所以主要负责的是编写Dao的数据逻辑接口，使用Mybatis的动态SQL,通过配置文件来操作Mysql数据库，实现了基本的“增”、“删”、“改”、“查”，同时减少了代码的冗余。
+		    <a class="btn" href="#" style="padding-top: 30px">2017.05 - 2017.08</a> <a class="btn btn-link" href="#" style="padding-top:30px">Java工程师</a>
+		    </p></div>
+		  </div>
+		</div>
+	</div>
+	</div>
+</div>
+<div class="row clearfix" id="awards">
+	    <div class="col-md-12 column">
+	    <h2>
+		    六、获奖情况|<span>Situation of awards</span>
+		</h2>
+		<div class="col-md-6 column">
+			<img alt="140x140" src="images/goal.jpg" style="width: 400px" />
+		</div>
+		<div class="col-md-6 column">
+			<p>
+			 1.  2017.05 - 2017.07
+			 </br>
+			 </br>《第十届中国大学生计算机设计大赛》中南地区赛
+			  一等奖。
+			 <a href="#">查看作品</a>
+			</p>
+			</br>
+			<p>
+			 2.  2016.10 - 2016.12
+			 </br>
+			 </br>
+			 《2016年软件设计创意大赛》
+			 优胜奖
+			 <a href="#">查看作品</a>
+			</p>
+			</br>
+			<p>
+			 2.  2015.03 - 2015.10
+			 </br>
+			 </br>
+			 《第十二届“挑战杯”全国大学生课外学术科技作品竞赛》
+			 优胜奖
+			 <a href="#">查看作品</a>
+			</p>
+		</div>
+		</div>
+	</div>
+<div class="row clearfix" id="comments">
+	    <div class="col-md-12 column">
+	    <h2>
+		    七、自我评价|<span>Self-assessment</span>
+		</h2>
+		<div class="col-md-12 column">
+			<p>
+				<strong>1.学习能力较强，“独立学习”，在<a href="http://www.imooc.com/u/2522974">慕课网http://www.imooc.com/u/2522974）</a>（的学习时长599.3小时 （35958分钟）。</strong>
+			</p>
+		</div>
+		<div class="col-md-12 column">
+			<p>
+				<strong>2.善于总结，并且乐于分享。比如：a.项目的“Explain.text”文件用于说明。b.在CSDN上的<a href="http://blog.csdn.net/wmc_bk/article/">博客:http://blog.csdn.net/wmc_bk/article/</a>，分享技术总结。</strong>
+			</p>
+			<p>Explain.text:</p>
+			<img src="images/explain.PNG">
+		</div>
+		<div class="col-md-12 column">
+			<p>
+				<strong>3.爱好思维构图，经常将刚学习的知识，用Xmind或A4纸，画思维图，加以理解与记忆。</strong>
+			</p>
+			<img src="images/a4.jpg"/>
+		</div>
+		<div class="col-md-12 column">
+			<p>
+				<strong>4.喜欢关注新鲜事物，关注GitHub上的开源项目，并分析过Bootstrap源码。</strong>
+			</p>
+			<img src="images/github.PNG"/>
+		</div>
 		</div>
 	</div>
 </div>
