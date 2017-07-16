@@ -93,6 +93,43 @@ div.desc {
     clear: both;
 }
 </style>
+<style type="text/css">
+  .footer{
+    width: 100%;
+    height:auto;
+    background-color: #2B2B2B;
+    margin-top: 100px;
+  }
+  .footer a{
+  	color: #9D9D9D;
+  }
+  .footer p{
+  	color: #9D9D9D;
+  }
+  .footer a:hover{
+     color: #ffffff;
+  }
+  .footer-nav{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 30px;
+    text-align: center;
+    color: #337AB7;
+  }
+  .footer-nav li{
+    margin:0 20px 10px 20px;
+    display: inline-block;
+  }
+  .footer-title{
+    font-size: 12px;
+  }
+  .footer-content span{
+    font-size: 20px;
+  }
+  .footer-content a{
+    font-size: 14px;
+  }
+</style>
 <script type="text/javascript">
 	$('body').scrollspy({ target: '.collapse navbar-collapse' });
 </script>
@@ -390,7 +427,7 @@ div.desc {
 		    <a target="_blank" href="#">
 		      <img src="images/iuesc.PNG" alt="Northern Lights" width="600" height="400">
 		    </a>
-		    <div class="desc" style="padding-top: 30px">1.在团队协作中，主要负责《iUESC》网页的编码部分，并结合bootstrap，实现了相应式布局；使用html5的video标签替代flash；index.html代码1688行，任课老师奖励一本《动态网站开发教程（Dreamweaver+Mysql+PHP）》作为鼓励。
+		    <div class="desc" style="padding-top: 30px">1.在团队协作中，主要负责《iUESC》网页的编码部分，并结合bootstrap，实现了响应式布局；使用html5的video标签替代flash；index.html代码1688行，任课老师奖励一本《动态网站开发教程（Dreamweaver+Mysql+PHP）》作为鼓励。
 		    <a class="btn" href="#" style="float: left;"></br>2016.11 - 2016.12</a> <a class="btn btn-link" href="#">前端开发工程师</a>
 		    </p></div>
 		  </div>
@@ -466,12 +503,12 @@ div.desc {
 		</h2>
 		<div class="col-md-12 column">
 			<p>
-				<strong>1.学习能力较强，“独立学习”，在<a href="http://www.imooc.com/u/2522974">慕课网http://www.imooc.com/u/2522974）</a>（的学习时长599.3小时 （35958分钟）。</strong>
+				<strong>1.学习能力较强，“独立学习”，在<a href="http://www.imooc.com/u/2522974">慕课网:(http://www.imooc.com/u/2522974)</a>（的学习时长599.3小时 （35958分钟）。</strong>
 			</p>
 		</div>
 		<div class="col-md-12 column">
 			<p>
-				<strong>2.善于总结，并且乐于分享。比如：a.项目的“Explain.text”文件用于说明。b.在CSDN上的<a href="http://blog.csdn.net/wmc_bk/article/">博客:http://blog.csdn.net/wmc_bk/article/</a>，分享技术总结。</strong>
+				<strong>2.善于总结，并且乐于分享。比如：a.项目的“Explain.text”文件用于说明。b.在CSDN上的<a href="http://blog.csdn.net/wmc_bk/article/">博客:(http://blog.csdn.net/wmc_bk/article/)</a>，分享技术总结。</strong>
 			</p>
 			<p>Explain.text:</p>
 			<img src="images/explain.PNG">
@@ -484,12 +521,52 @@ div.desc {
 		</div>
 		<div class="col-md-12 column">
 			<p>
-				<strong>4.喜欢关注新鲜事物，关注GitHub上的开源项目，并分析过Bootstrap源码。</strong>
+				<strong>4.喜欢关注新鲜事物，关注<a href="https://github.com/wmck">GitHub(https://github.com/wmck)</a>上的开源项目，并分析过Bootstrap源码。</strong>
 			</p>
 			<img src="images/github.PNG" style="width: 1010px" />
 		</div>
 		</div>
 	</div>
 </div>
+<div class="footer">
+<div>
+  <div class="footer-nav">
+    <ul class="footer-title">
+      <li><a href="#">职业规划</a></li>
+      <li><a href="#">技术关注</a></li>
+      <li><a href="#">创客空间</a></li>
+      <li><a href="#">追根究底</a></li>
+      <li><a href="#">生活向往</a></li>
+    </ul>
+  </div>
+  <div class="footer-nav">
+    <ul class="footer-content">
+      <li>
+         <a href="#"><span class="glyphicon glyphicon-envelope"></span> 邮编：421001</a>
+      </li>
+      <li>
+         <a href="#"><span class="glyphicon glyphicon-map-marker"></span> 地址：湖南省衡阳市南华大学红湘校区</a>
+      </li>
+      <li>
+         <a id="weibo" href="#"><span class="glyphicon glyphicon-qrcode"></span> Github</a>
+         <img id="img" src="images/code.png" style="display: none;float: right;padding-left:10px">
+      </li>    
+    </ul>
+  </div>
+  <div class="footer-nav">
+    <p>Copyright wmck© 2017. All rights reserved</p>
+  </div>
+  </div>
+</div>
+<script type="text/javascript">
+	$("document").ready(function(){
+      $("#weibo").mouseover(function(){
+          document.getElementById("img").style.display="block";
+      });
+      $("#weibo").mouseleave(function(){
+          document.getElementById("img").style.display="none";
+      });
+	});
+</script>
 </body>
 </html>
