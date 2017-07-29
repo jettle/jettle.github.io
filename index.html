@@ -142,13 +142,13 @@ div.desc {
 		<div class="col-md-12 column" style="padding-right: 0px">
 			<nav class="navbar navbar-default  navbar-inverse navbar-fixed-top" role="navigation">
 				<div class="navbar-header">
-					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">汪明城(wmck)</a>
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">汪明城(jettle-乔特)</a>
 				</div>
 				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li class="active">
-							 <a href="#education">教育背景</a>
+							 <a href="#education">教育程度</a>
 						</li>
 						<li>
 							 <a href="#skills">个人技能</a>
@@ -242,7 +242,7 @@ div.desc {
                               </video>
 						<div class="carousel-caption">
 							<h4>
-								Personal blog(wmck.github.io)
+								Personal blog(jettle.github.io)
 							</h4>
 							<p>
 								You can use the editor on GitHub to maintain and preview the content for your website in Markdown files.
@@ -284,9 +284,11 @@ div.desc {
     <div style="margin-bottom: 50px">
     	<h2>一、教育背景|Educational Background</h2>
     	</br>
-        <span class="glyphicon glyphicon-tag"><span style="font-size: 16px">教育背景：
-        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014.09-2018.06&nbsp;南华大学船山学院&nbsp;软件工程</br>
-        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016.07-2016.08&nbsp;华信暑期夏令营（技能培训）</span></span>
+    	</br>
+        <span class="glyphicon glyphicon-tag"><span style="font-size: 16px">教育程度：
+        </br>
+        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014.09-2018.06&nbsp;4年制&nbsp;本科</br>
+        
     </div>
     </div>
     </div>
@@ -351,7 +353,6 @@ div.desc {
 				</dt>
 				</br>
 				<dd>
-				</br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.形式：代表Boom工作室参加了《“乐易考杯”湖南省“互联网+”大学生就业创业大赛》，独自编辑6500字的《创新创业计划书》—“智能便携式电动滑板”。
 				</dd>
 		    </dl>
@@ -505,26 +506,34 @@ div.desc {
 		<div class="col-md-12 column">
 			<p>
 				<strong>1.学习能力较强，“独立学习”，在<a href="http://www.imooc.com/u/2522974">慕课网:(http://www.imooc.com/u/2522974)</a>（的学习时长599.3小时 （35958分钟）。</strong>
+				<span id="img-icon-study" class="glyphicon glyphicon-eye-open"  onclick="seeImgStudy();" style="color: green;
+	  cursor:pointer;">
 			</p>
+			<img id="img-study" src="images/imooc.PNG" style="width: 1010px;display: none">
 		</div>
 		<div class="col-md-12 column">
 			<p>
 				<strong>2.善于总结，并且乐于分享。比如：a.项目的“Explain.text”文件用于说明。b.在CSDN上的<a href="http://blog.csdn.net/wmc_bk/article/">博客:(http://blog.csdn.net/wmc_bk/article/)</a>，分享技术总结。</strong>
+                <span id="img-icon-explain" class="glyphicon glyphicon-eye-open"  onclick="seeImgExplain();" style="color: green;
+	  cursor:pointer;">
 			</p>
-			<p>Explain.text:</p>
-			<img src="images/explain.PNG">
+			<img id="img-explain" src="images/explain.PNG" style="display: none">
 		</div>
 		<div class="col-md-12 column">
 			<p>
-				<strong>3.爱好思维构图，经常将刚学习的知识，用Xmind或A4纸，画思维图，加以理解与记忆。</strong>
-			</p>
-			<img src="images/a4.jpg" style="width: 1010px" />
+				<strong>3.爱好思维构图，经常将刚学习的知识，用ProcessOn/Xmind或A4纸，画思维图，加以理解与记忆。</strong>
+				<span id="img-icon-mind" class="glyphicon glyphicon-eye-open"  onclick="seeImgMind();" style="color: green;
+	  cursor:pointer;">
+			</p>		
+			<img id="img-mind" src="images/a4.jpg" style="width: 1010px;display: none" />
 		</div>
 		<div class="col-md-12 column">
 			<p>
-				<strong>4.喜欢关注新鲜事物，关注<a href="https://github.com/wmck">GitHub(https://github.com/wmck)</a>上的开源项目，并分析过Bootstrap源码。</strong>
+				<strong>4.喜欢关注新鲜事物，关注<a href="https://github.com/wmck">GitHub(https://github.com/jettle)</a>上的开源项目，并分析过Bootstrap源码。</strong>
+				<span id="img-icon-github" class="glyphicon glyphicon-eye-open"  onclick="seeImgGithub();" style="color: green;
+	  cursor:pointer;">
 			</p>
-			<img src="images/github.PNG" style="width: 1010px" />
+			<img id="img-github" src="images/github.PNG" style="width: 1010px;display: none" />
 		</div>
 		</div>
 	</div>
@@ -537,7 +546,7 @@ div.desc {
       <li><a href="#">技术关注</a></li>
       <li><a href="#">创客空间</a></li>
       <li><a href="#">追根究底</a></li>
-      <li><a href="#">生活圈</a></li>
+      <li><a href="#">生活向往</a></li>
     </ul>
   </div>
   <div class="footer-nav">
@@ -546,7 +555,7 @@ div.desc {
          <a href="#"><span class="glyphicon glyphicon-envelope"></span> 邮编：421001</a>
       </li>
       <li>
-         <a href="#"><span class="glyphicon glyphicon-map-marker"></span> 地址：湖南省衡阳市南华大学红湘校区</a>
+         <a href="#"><span class="glyphicon glyphicon-map-marker"></span> 地址：湖南省衡阳市蒸湘区</a>
       </li>
       <li>
          <a id="weibo" href="#"><span class="glyphicon glyphicon-qrcode"></span> Github</a>
@@ -555,10 +564,51 @@ div.desc {
     </ul>
   </div>
   <div class="footer-nav">
-    <p>Copyright wmck© 2017. All rights reserved</p>
+    <p>Copyright jettle© 2017. All rights reserved</p>
   </div>
   </div>
 </div>
+<script type="text/javascript">
+                
+    function seeImgStudy(){
+        var imgId = "img-study";
+        var imgIcon = "img-icon-study";
+    	seeImg(imgId,imgIcon);
+    }
+    
+    function seeImgExplain(){
+        var imgId = "img-explain";
+        var imgIcon = "img-icon-explain";
+    	seeImg(imgId,imgIcon);
+    }
+    
+    function seeImgMind(){
+        var imgId = "img-mind";
+        var imgIcon = "img-icon-mind";
+    	seeImg(imgId,imgIcon);
+    }
+
+    function seeImgGithub(){
+        var imgId = "img-github";
+        var imgIcon = "img-icon-github";
+    	seeImg(imgId,imgIcon);
+    }
+
+	function seeImg(imgId,imgIcon){
+     
+	 if (document.getElementById(imgId).style.display=="none") 
+	 { 
+	 	document.getElementById(imgId).style.display="block"; 
+	 	document.getElementById(imgIcon).style.color="#2B2B2B";
+	 }
+	 else { 
+	 	
+	 	  document.getElementById(imgId).style.display="none"; 
+	 	  document.getElementById(imgIcon).style.color="green";
+	 	} 
+	 
+}
+</script>
 <script type="text/javascript">
 	$("document").ready(function(){
       $("#weibo").mouseover(function(){
