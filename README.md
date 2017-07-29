@@ -11,7 +11,7 @@ As Kanye West said:
 > the present is our past.
 ### Description
 
- * Website：[http://mingck.github.io](http://mingck.github.io)  :octocat: 
+ * Website：[http://mingck.github.io](http://jettle.github.io)  :octocat: 
  * Related to technical：html5/css3/[bootstrap](http://twbs.github.io/bootstrap/)/javascript/[JQuery](https://jquery.com/)
  * Reference：react/UI
 
@@ -31,7 +31,7 @@ As Kanye West said:
     ```html
     <div class="carousel-caption">
       <h4>
-        Personal blog(mingck.github.io)
+        Personal blog(jettle.github.io)
       </h4>
       <p>
         You can use the editor on GitHub to maintain and preview the content for your website in Markdown files.
