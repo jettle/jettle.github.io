@@ -1,37 +1,44 @@
-## Welcome to GitHub Pages
+##欢迎大家访问我的主页|Welcome to GitHub Pages of Mingck
+  
+  *说明：
+       此个人主页或是博客（Website or Blogs）以简洁的方式阐述了一个积极向上的生活状态，另一方面，也让大家更加的了解我，增近彼此的距离，
+   希望，我们共同怀揣着改变世界的梦想，以一个合格的开发者的身份，投入到开源的世界里，用行动去感染一批又一批有着共同梦想的一类人。
+  
+### Description
 
-You can use the [editor on GitHub](https://github.com/wmc-github/wmc-github.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+ * 网址：[http://mingck.github.io](http://mingck.github.io)  :octocat: 
+ * 涉及技术：html5/css3/bootstrap/javascript/JQuery3.1.1  
+ * 参考：react/UI
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Construction
 
-### Markdown
+    mingck
+    --css
+    --fonts
+    --images
+    --js
+    --video
+    --README.md
+    --_config.yml
+    --index.html  //personal pages
+    
+### Sectional Code
+    ```html
+    <div class="carousel-caption">
+      <h4>
+        Personal blog(mingck.github.io)
+      </h4>
+      <p>
+        You can use the editor on GitHub to maintain and preview the content for your website in Markdown files.
+      </p>
+    </div>
+    ```
+### Blockquotes
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+As Kanye West said:
 
-```markdown
-Syntax highlighted code block
+> We're living the future so
+> the present is our past.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wmc-github/wmc-github.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+  *结语：
+       此文档或主页相当于一个开发者的另一种表达方式，后续会持续更新。
