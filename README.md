@@ -12,7 +12,7 @@ As Kanye West said:
 ### Description
 
  * Website：[http://mingck.github.io](http://mingck.github.io)  :octocat: 
- * Related to technical：html5/css3/[bootstrap]((http://twbs.github.io/bootstrap/)/javascript/[JQuery](https://jquery.com/)
+ * Related to technical：html5/css3/[bootstrap](http://twbs.github.io/bootstrap/)/javascript/[JQuery](https://jquery.com/)
  * Reference：react/UI
 
 ### Construction
