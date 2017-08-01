@@ -11,7 +11,7 @@ As Kanye West said:
 > the present is our past.
 ### Description
 
- * Website：[http://mingck.github.io](http://jettle.github.io)  :octocat: 
+ * Website：[http://jettle.github.io](http://jettle.github.io)  :octocat: 
  * Related to technical：html5/css3/[bootstrap](http://twbs.github.io/bootstrap/)/javascript/[JQuery](https://jquery.com/)
  * Reference：react/UI
 
