@@ -6,18 +6,17 @@
      This personal web page or blog (Website or Blogs) with a concise way elaborated a positive life attitude * * * *, on the other hand, also let everybody know me more, tantalisingly close the distance of each other, Hope, we together with the dream * * * *, to change the world as a qualified developers, into the world of open source, use action to infection group after group of people who have a common dream of it.
 引用
 ### Blockquotes
-坎耶·维斯特：
+坎耶·维斯特：我们生活在未来，所以，现在是我们的过去。
 As Kanye West said:
-我们生活在未来，所以，现在是我们的过去。
 > We're living the future so
 > the present is our past.
 描述
 ### Description
- * 站点：[http://jettle.github.io](http://jettle.github.io)  :octocat:
- * 核心技术：html5/css3/[bootstrap](http://twbs.github.io/bootstrap/)/javascript/[JQuery](https://jquery.com/)
- * 参考：react/UI
+ 站点：
  * Website：[http://jettle.github.io](http://jettle.github.io)  :octocat: 
+ 核心技术：
  * Related to technical：html5/css3/[bootstrap](http://twbs.github.io/bootstrap/)/javascript/[JQuery](https://jquery.com/)
+ 参考：
  * Reference：react/UI
 结构
 ### Construction
@@ -44,6 +43,7 @@ As Kanye West said:
     </div>
     ```
 结语
+
     该文档或主页相当于开发人员的另一个表达方式，后续将继续更新。
 ### Epilogue
     
