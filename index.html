@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>index-video</title>
+	<title>index</title>
 	<meta charset="utf-8">
 	<link href="http://cdn.staticfile.org/twitter-bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
 <!Framework:jquery>
@@ -40,7 +40,20 @@ span{
 	width: 302px;
 	height: 121px;
 }
+h2{
+	text-align: center;
+}
+h2 span{
+	color: green;
+}
 
+.container-fluid a{
+	color: #9D9D9D;
+}
+
+.career-planning{
+	background-color: #0B0B0B;
+}
 </style>
 <style>
 /*作品展示*/
@@ -136,19 +149,25 @@ div.desc {
 </script>
 </head>
 <!--添加滚动监听-->
-<body data-spy="scroll" data-target=".collapse navbar-collapse">
+<body data-spy="scroll" data-target=".navbar" data-offset="50"">
 <div class="container">
 	<div class="row clearfix">
 		<div class="col-md-12 column" style="padding-right: 0px">
-			<nav class="navbar navbar-default  navbar-inverse navbar-fixed-top" role="navigation">
+			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
 				<div class="navbar-header">
-					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">汪明城(jettle-乔特)</a>
+                    <!--button-->
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> 
+					 <a class="navbar-brand" href="#">汪明城(jettle-乔特)</a>
 				</div>
 				
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class="active">
-							 <a href="#education">教育程度</a>
+					    <li>
+							 <a href="#info">基本信息</a>
+						</li>
+						<li class="career-planning">
+							 <a href="#career-planning">职业规划</a>
 						</li>
 						<li>
 							 <a href="#skills">个人技能</a>
@@ -232,6 +251,7 @@ div.desc {
 						</li>
 					</ul>
 				</div>	
+				</div>
 			</nav>
 
 			<div class="carousel slide" id="carousel-941364">
@@ -254,23 +274,31 @@ div.desc {
 		</div>
 	</div>
 </div>
-<div class="container" style="padding-left: 75px">
+
+<div class="container" style="padding-left: 35px">
 	<div class="row clearfix">
-		<div class="col-md-12 column">
+		<div class="col-md-12 column" id="info" >
 			<div class="jumbotron"  style="background-color: #ffffff">
-				<h2>
-					汪明城|<span style="font-size:14px">英文：wmck</span>
-				</h2>
+				<h3>
+					汪明城|<span style="font-size:14px">英文：jettle</span>
+				</h3>
 				<p>
-				    男 本科 | 在校生</br></br>
+				    男 本科 | 应届生</br></br>
 				    <span class="glyphicon glyphicon-bookmark"><span style="font-size: 16px">求职岗位：前端工程师/Java工程师</span></span> 
                     
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class="glyphicon glyphicon-map-marker"><span style="font-size: 16px">工作地点：深圳，长沙，广州</span></span> 
+                    <span class="glyphicon glyphicon-map-marker"><span style="font-size: 16px">工作地点：公司安排</span></span> 
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class="glyphicon glyphicon-phone-alt"><span style="font-size:16px">手机：13142332483</span></span>
+                    <span class="glyphicon glyphicon-book"><span style="font-size: 16px">教育程度：2014.09-2018.06 4年制 本科教育</span></span> 
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class="glyphicon glyphicon-envelope"><span style="font-size: 16px">邮箱：wmcjob@163.com</span></span> 
+                    <span class="glyphicon glyphicon-tag"><span style="font-size:16px">英语水平：CET-4</span></span>
+                    </br>
+                    </br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="glyphicon glyphicon-phone-alt" style="margin-left: -36px"><span style="font-size:16px;">手机：13142332483</span></span>
+                
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="glyphicon glyphicon-envelope" style="margin-left: 96px"><span style="font-size: 16px;">邮箱：wmcjob@163.com</span></span> 
 				</p>
 				</br>
 				<p>
@@ -279,24 +307,82 @@ div.desc {
 			</div>
 		</div>
 	</div>
-	<div class="row clearfix" id="education">
-	<div class="col-md-12 column">
+	<div class="row clearfix" id="career-planning">
+	<div class="col-md-12 column" style="margin-left: 5px">
     <div style="margin-bottom: 50px">
-    	<h2>一、教育背景|Educational Background</h2>
-    	</br>
-    	</br>
-        <span class="glyphicon glyphicon-tag"><span style="font-size: 16px">教育程度：
-        </br>
-        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014.09-2018.06&nbsp;4年制&nbsp;本科</br>
-        
-    </div>
-    </div>
-    </div>
+
+    	<h2>职业规划|C<span>are</span>er P<span>la</span>nn<span>in</span>g</br><span>___</span></h2>
+    <nav id="navbar-example"  role="navigation">
+	<div class="container-fluid"> 
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">@动态规划：</a>
+		</div>
+		<div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+			<ul class="nav navbar-nav">
+				<li><a href="#ps">*说明</a></li>
+				<li><a href="#hld">霍兰德职业测试</a></li>
+				<li class="dropdown">
+					<a href="#" id="navbarDrop1" class="dropdown-toggle" 
+					   data-toggle="dropdown">就业领域
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu" role="menu" 
+						aria-labelledby="navbarDrop1">
+						<li><a href="#spen" tabindex="-1">发展趋势</a></li>
+						<li><a href="#job" tabindex="-1">职位</a></li>
+						<li class="divider"></li>
+						<li><a href="#dream" tabindex="-1">目标</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div> 
+</nav>
+<div data-spy="scroll" data-target="#navbar-example" data-offset="0" 
+	 style="height:500px;overflow:auto; position: relative;">
+	<h4 id="ps">1.*说明</h4>
+	<p>	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	此份“个人职业规划”简洁的概括了未来的短期规划，在此依据自身综合条件，结合科学技术的发展趋势，作出1-2年的职业规划，由于技术更新迭代的速度较快，因此，此份“个人职业规划”应呈现“动态性” ‎。
+	</br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015‎-07‎-21‎ ‏‎23:29:04
+	</p>
+	<h4 id="hld">2.霍兰德职业测试</h4>
+	<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    霍兰德职业兴趣测试完整版测试由美国著名职业指导专家霍兰德编制，主要用于确定被测试者的职业兴趣倾向,进而用于指导被测试者选择适合自身职业兴趣的专业发展方向和职业发展方向。霍兰德提出的6种基本职业类型为：实用型R、研究型I、艺术型A、社会型S、企业型E、常规型C。
+	</p>
+	<img src="images/hld1.PNG">
+	<img src="images/hld2.PNG">
+	</br>
+	<a href="hld.html">职业测评试题</a>
+     
+    <h4 id="spen">3.就业领域</h4>
+	<h5 id="spen">3.1发展趋势</h5>
+	<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    在此我们有经历过移动互联网时代、“互联网+”大浪潮、O2O模式、智能家居及VR/AR技术，而目前的“共享单车”也是互联网发展的产物，随着国内现有的技术、网络等条件不断完善，金融、电信、电力、石油、政府等传统上软件行业的重要客户，都走上了数据集中的道路，开始拥抱云计算；软件行业也表现出国际化，随着经济全球化的进一步推进、中国加入WTO，中国软件业将面临更加广阔的国际市场以及前所未有的走出去的发展机会。
+
+	</p>
+	<h5 id="job">3.2职位</h5>
+	<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Java研发工程师。
+	</p>
+	<h5 id="dream">3.3目标</h5>
+	<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	初级软件工程师——中/高级软件工程师。
+	</p>
+</div>
+</div>
+</div>
+</div>
     </tr>
 	<div class="row clearfix" id="skills">
 	    <div class="col-md-12 column">
 	    <h2>
-		    二、个人技能|<span>Per</span>so<span>n's</span> Sk<span>il</span>ls：
+		    个人技能|<span>Per</span>so<span>n's</span> Sk<span>il</span>ls</br><span>___</span>
 		</h2>
 		<div class="col-md-6 column">
 			<img alt="140x140" src="images/teaching.png" />
@@ -305,17 +391,19 @@ div.desc {
 			
 			<p>
 				</br>			   
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.了解html5/javascript/ajax/jquery，并深入探索过bootstrap的网格系统（Grid System）及其工作原理。
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.了解PHP/Apache/Wamp/Spring/SpringMVC/Mybatis主流开发框架及linux。
 				</br>
 				</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.了解PHP/Apache/Mysql/Wamp/Oracle/Junit测试/Spring、Struts、Hibernate三大开发框架及linux。
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.熟悉Html5/Css3/JavaScript/AJAX/JQuery，并深入探索过Bootstrap的网格系统（Grid System）及其工作原理。
 				</br>
 				</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.熟悉UML/数据结构/常用算法/基本的设计模式及MVC框架思想。
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.熟悉Mysql/Oracle/E-R模型及并发控制的封锁机制。
 				</br>
 				</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.熟悉java编程，理解java中的io/线程等知识，熟悉JSP/Servlet及Model2模式（Model:javaBean/View:jsp/Control:Servlet），熟练使用Eclipse开发工具及其部分“快捷键”，
-				如：“ctrl+/”—自动注释当前行。</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.熟悉UML/数据结构/常用算法/基本的设计模式及MVC框架思想。
+				</br>
+				</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.熟悉java编程，Junit单元测试，理解java中的io/线程等知识，熟悉JSP/Servlet及Model2模式（Model:javaBean/View:jsp/Control:Servlet），熟练使用Eclipse开发工具及Tomcat。</br>
 			</p>
 			<p>
 				 <a class="btn" href="#">View details »</a>
@@ -324,9 +412,9 @@ div.desc {
 		</div>
 	</div>
 	<div class="row clearfix" id="campus" style="margin-bottom: 100px;">
-	   <div class="col-md-12 column">
-		<h2>三、校内经历|Campus's Experience</h2>
-		    </br>
+	   <div class="col-md-12 column" style="margin-left: -15px">
+		<h2>校内经历|<span>Ca</span>m<span>pu</span>s's Ex<span>per</span>ie<span>n</span>ce</br><span>___</span></h2>
+		</br>
 		<div class="col-md-3 column">
 		    <div class="icon">
 			     <img src="images/ZTE.PNG" style="padding-left: 45%;padding-left: 25%;padding-top: 25px;">
@@ -392,23 +480,43 @@ div.desc {
    	<div class="row clearfix" id="practices">
 	<div class="col-md-12 column">
     <div style="margin-bottom: 50px">
-    	<h2>四、实习经历|Internship experience</h2>
+    	<h2>实习经历|In<span>ter</span>ns<span>hi</span>p ex<span>per</span>ie<span>nc</span>e</br><span>___</span></h2>
     	</br>
     	</br>
-        <p>2017.06.20-2017.06.30    湖南软测信息技术有限公司    前端开发工程师</p>
+        <p>2017.06.20-2017.06.30&nbsp;&nbsp;湖南软评信息技术有限公司&nbsp;&nbsp;Java开发工程师</p>
         </br>
-        <p>1.在项目组长的带领下，负责《权限管理系统》视图层及授权功能的开发，编写javascript与javaWeb中的EL表达式相结合，并通过EL表达式的方式将后台逻辑数据返回给视图层，并通过Mysql中的角色状态置1或0，实现了不同角色的权限控制及相关视图的显示。</p>
+        <p>1.项目描述：</p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        经过《权限管理系统》系统注册的员工，可以进行日常的工作考勤，管理员具有最高权限，可以管理整个系统的功能，包括：授予权限、增删改查菜单、增删改查角色及考勤管理。
+        </p>
+        <p>2.开发环境：</p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Windows 8.1 x64/MyEclipse 10/Tomcat 7/JDK 7。
+        </p>
+        <p>3.核心技术：</p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Html5/Css3/JavaScript/JQuery/EasyUI/Bootstrap/JavaWeb/Spring/SpringMVC/Mybatis。
+        </p>
+        <p>4.项目职责：</p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        在项目组长的带领下，主要负责《企业员工管理系统》的视图层及授权功能的开发；此项目基于JavaWeb三层架构，编写javascript与javaWeb中的EL表达式相结合，并通过EL表达式的方式将后台逻辑数据返回给视图层，同时，通过Mysql中的角色状态置1或0，来实现了不同角色的权限控制及相关视图的显示。
+        </p>
         </br>
         </br>
         <img src="images/soft.PNG">
+        <p>（*注：公司地址:	湖南省长沙市芙蓉区朝阳街街道解放东路51号湖南省电子产品检测）</p>
     </div>
     </div>
     </div>
 </div>
-<div id="project" class="container" style="padding-left: 75px">
+<div id="project" class="container" style="padding-left: 15px">
 	<div class="row clearfix">
 	<div class="col-md-12 column">
-	<h2>五、项目经历Program's Experience</h2>
+	<h2>项目经历|<span>Pro</span>gr<span>a</span>m's Ex<span>per</span>ie<span>nc</span>e</br><span>___</span></h2>
     </br>
     <div class="col-md-3 column">
 	   <div class="responsive">
@@ -464,7 +572,8 @@ div.desc {
 <div class="row clearfix" id="awards">
 	    <div class="col-md-12 column">
 	    <h2>
-		    六、获奖情况|<span>Situation of awards</span>
+		    获奖情况|Si<span>tua</span>ti<span>o</span>n <span>of</span> aw<span>ard</span>s
+		    </br><span>___</span>
 		</h2>
 		<div class="col-md-6 column">
 			<img alt="140x140" src="images/goal.jpg" style="width: 400px" />
@@ -488,20 +597,22 @@ div.desc {
 			</p>
 			</br>
 			<p>
-			 2.  2015.03 - 2015.10
+			 2.  2016.05 - 2016.12
 			 </br>
 			 </br>
-			 《第十二届“挑战杯”全国大学生课外学术科技作品竞赛》
-			 优胜奖
+			 《第七届南华大学“挑战杯”大学生课外学术科技作品竞赛》
+			 三等奖
 			 <a href="#">查看作品</a>
 			</p>
 		</div>
 		</div>
 	</div>
 <div class="row clearfix" id="comments">
-	    <div class="col-md-12 column">
+	    <div class="col-md-12 column" style="margin-left: 2px">
 	    <h2>
-		    七、自我评价|<span>Self-assessment</span>
+		    自我评价|S<span>el</span>f-as<span>ses</span>sm<span>en</span>t
+		    </br>
+		    <span>___</span>
 		</h2>
 		<div class="col-md-12 column">
 			<p>
@@ -606,7 +717,6 @@ div.desc {
 	 	  document.getElementById(imgId).style.display="none"; 
 	 	  document.getElementById(imgIcon).style.color="green";
 	 	} 
-	 
 }
 </script>
 <script type="text/javascript">
