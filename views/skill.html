@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>acm</title>
+	<title>skill</title>
 	<meta charset="utf-8">
 	<link href="http://cdn.staticfile.org/twitter-bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
 	<!Framework:jquery>
@@ -12,11 +12,30 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 <style type="text/css">
-	.tab-content{
+<!--滚动监听-->
+	body {
+		position: relative;
+	}
+	ul.nav-pills {
+		top: 20px;
+		position: fixed;
+	}
+	div.col-sm-9 div {
+		height: 850px;
 		font-size: 16px;
 	}
-</style>
-<style type="text/css">
+	#section1 { background-color: #ffffff;}
+	#section2 { background-color: #ffffff;}
+	#section3 { background-color: #ff9800;}
+	#section41 { background-color: #00bcd4;}
+	#section42 { background-color: #009688;}
+
+	@media screen and (max-width: 810px) {
+		#section1, #section2, #section3, #section41, #section42  {
+			margin-left: 150px;
+		}
+	}
+
 <!--尾页-->
   .footer{
     width: 100%;
@@ -159,77 +178,75 @@
 	</div>
 </div>
 
+<img style="margin-top: 50px;width: 1395px" src="../images/person-skill.png">
 
-<div>
-    <img style="margin-top: 50px;" src="../images/usc.PNG">
-	<h3 style="margin-left: 105px"><span class=" 
-glyphicon glyphicon-stop" style="color: #06408A"></span>2015.04 - 至今 &nbsp;&nbsp;南华大学计算机科学与技术学院软件协会 &nbsp;&nbsp;技术部成员 </h3>
-</div>
-
-<div class="container" style="margin-top: 100px">
-<div class="row clearfix">
-    <div class="col-md-12 column">
-      <div class="tabbable" id="tabs-96386">
-        <ul class="nav nav-tabs">
-          <li  class="active">
-             <a href="#panel1" data-toggle="tab">《衡阳师范大学ACM邀请赛》</a>
-          </li>
-          <li>
-             <a href="#panel2" data-toggle="tab">成果</a>
-          </li>
-          <li>
-             <a href="#panel3" data-toggle="tab">总结</a>
-          </li>
-        </ul>
-        <div class="tab-content">
-          <div class="tab-pane active" id="panel1">
-            <p>1.大赛详情：</p>
-            </br>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015年的《衡阳师范大学ACM邀请赛》是衡阳师范大学以交流学习，切磋编程技术为根本的一次两校公平友谊赛，促进了两校的ACM老师及队员的交流互助，彰显了两校的魅力。</p>
-            <p>
-            </br>
-            <p>2.附：</p>
-              <img src="../images/acm.png">
-            </p>
-            </br>
-          </div>
-          <div class="tab-pane" id="panel2">
-            <img src="../images/number.gif">
-            <div style="float: right;margin-top: 150px">
-            <p>
-            </br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.在校期间，参与ACM程序设计，受邀参加《衡阳师范大学ACM邀请赛》，排名前<span style="color: green;font-size: 18px"">35%</span>。
-            </p>
-            </div>
-            </br>
-          </div>
-          <div class="tab-pane" id="panel3">
-            <div class="video-background-home">
-                <p>1.文档：</p>
-                <img src="../images/acm-text.PNG">
-                </br>
-                <p>2.内容：</p>
-                <p>Hengyang Normal University@ACM校赛邀请总结报告</p>
-                <p>序言：
-                </br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本次校赛内容7题，含一道英文题，使用visual c++ 6.0或visual studio 2010编译器进行编译。
-                </br>
-                1.知识角度：
-                </br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自身缺少一种认识一个整体的ACM框架的认知，没有真正的了解过它的所有的知识内容和要求，只是从一面的路径去摸索它，没有针对性的题型及算法的练习和巩固。
-                </br>
-                2.判题系统：</br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对于在线编程的正确率的判断，需要依据相应的格式的输入，再通过某些算法逻辑实现对应结果的输出。
-                 </br>
-                3.结语：</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当你不知道的时候，正是你要获取的时候；当你觉得来不及的时候，正是你要开始的时候；当你一无所成的时候，正是你要取得成功的第一步。
+<div class="container">
+	<div class="row">
+		<nav class="col-sm-3" id="myScrollspy">
+			<div class="container-fluid"> 
+			<div class="container-fluid"> 
+			<ul class="nav nav-pills nav-stacked" style="margin-top: 210px">
+				<li class="active"><a href="#section1">前端开发</a></li>
+				<li><a href="#section2">后端开发</a></li>
+				<li><a href="#section3">数据库</a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">专业知识 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#section41">数据结构</a></li>
+						<li><a href="#section42">UML统一建模基础</a></li>                     
+					</ul>
+				</li>
+			</ul>
+			</div>	
+			</div>		
+		</nav>
+		<div class="col-sm-9">
+			<div id="section1">
+			    <img src="../images/web.png" style="padding-top: 50px">    
+				<h1>1.HTML5</h1>
+				<p>1.1*掌握程度：<span style="color: green">熟悉</span></p>
+				</br>
+                <p>1.2说明：</p>
+                <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现已掌握绝大多数的HTML5新特性，包括：HTML5-Video/HTML5-地理定位等等，其中，也在具体的项目中使用HTML5-Video代替了原有的Flash。
                 </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                </br>
+                <p>1.3例如：</p>
+                <img src="../images/html5-video.png">
+                <h1>2.CSS3</h1>
+				<p>1.1*掌握程度：<span style="color: green">熟悉</span></p>
+				</br>
+                <p>1.2说明：</p>
+                <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;掌握大多数CSS3新增内容，包括：CSS3-动画/CSS3-过渡及media query（媒体查询），其中，在响应式开发中，将CSS3的media query与Bootstrap的 网格系统（Grid System）作了对比。
+                </p>
+                </br>
+                <p>1.3例如：</p>
+                <p>"@media only screen and (max-width: 700px) {
+                   .dropdown-content-cart{
+                      background-color: #CCC;
+                     }
+                 }"，其中，购物车div的class=".dropdown-content-cart"，则表示：当屏幕的分辨率小于700px时，此div的背景颜色将变成灰色。
+                 </p>
+                <img src="../images/css3-media.png">
+			</div>
+			<div id="section2"> 
+				
+			</div>        
+			<div id="section3">         
+				<h1>Section 3</h1>
+				<p>Try to scroll this section and look at the navigation list while scrolling!</p>
+			</div>
+			<div id="section41">         
+				<h1>Section 4-1</h1>
+				<p>Try to scroll this section and look at the navigation list while scrolling!</p>
+			</div>      
+			<div id="section42">         
+				<h1>Section 4-2</h1>
+				<p>Try to scroll this section and look at the navigation list while scrolling!</p>
+			</div>
+		</div>
+	</div>
 </div>
+
 <!--尾页-->
 <div class="footer" style="background-color: #2B2B2B">
 <div>
