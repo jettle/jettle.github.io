@@ -183,8 +183,16 @@ div.desc {
 								</li>
 							</ul>
 						</li>
-						<li>
-							 <a href="#practices">实习经历</a>
+						<li class="dropdown">
+							  <a href="#" class="dropdown-toggle" data-toggle="dropdown">实习经历<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="#practices">2017.10.23-2018.02.25   衡阳镭目科技有限责任公司   实习Java开发工程师</a>
+								</li>
+								<li>
+									 <a href="#practices">2017.06.20-2017.06.30   湖南软评信息技术有限公司   Java开发工程师</a>
+								</li>
+						    </ul>
 						</li>
 						<li class="dropdown">
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">项目经历<strong class="caret"></strong></a>
@@ -372,11 +380,14 @@ div.desc {
                     <span class="glyphicon glyphicon-tag"><span style="font-size:16px">英语水平：CET-4</span></span>
                     </br>
                     </br>
+                    <span class="glyphicon glyphicon-send"><span style="font-size:16px">政治面貌：中共党员</span></span>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
                     <span class="glyphicon glyphicon-phone-alt" style="margin-left: -36px"><span style="font-size:16px;">手机：13142332483</span></span>
-                
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class="glyphicon glyphicon-envelope" style="margin-left: 96px"><span style="font-size: 16px;">邮箱：wmcjob@163.com</span></span> 
+                    <span class="glyphicon glyphicon-envelope" style="margin-left: 32px"><span style="font-size: 16px;">邮箱：wmcjob@163.com</span></span> 
 				</p>
 				</br>
 				<p>
@@ -448,7 +459,7 @@ div.desc {
 	<h5 id="dream" style="padding-top: 50px">3.3目标</h5>
 	<p>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	初级软件工程师——中/高级软件工程师。
+	初级软件工程师—技术上的骨干—高级软件工程师/架构师。
 	</p>
 	<a href="views/myself.html">More</a>
 </div>
@@ -515,12 +526,12 @@ div.desc {
 		    <dl style="font-size: 16px">
 				</br>
 				<dt>
-					2015.06 - 2016.10	Boom团队	策划组组长
+					2015.06 - 2016.10	三七团队	策划组组长
 				</dt>
 				</br>
 				<dd>
 				</br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.形式：代表Boom工作室参加了《“乐易考杯”湖南省“互联网+”大学生就业创业大赛》，独自编辑6500字的《创新创业计划书》—“智能便携式电动滑板”。
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.形式：代表三七工作室参加了《“乐易考杯”湖南省“互联网+”大学生就业创业大赛》，独自编辑6500字的《创新创业计划书》—“智能便携式电动滑板”。
 				</dd>
 		    </dl>
 		    <a href="views/boom.html">了解更多</a>
@@ -561,30 +572,100 @@ div.desc {
 		</div>	
 	</div>
    </div>
-   	<div class="row clearfix" id="practices" style="margin-bottom: 100px;margin-left:-125px;margin-right: -125px">
+   <!--面包屑切片导航-->
+   <div class="row clearfix" id="practices" style="margin-left:-125px;margin-right: -125px">
 	<div class="col-md-12 column">
     <div style="margin-bottom: 50px">
     	<h2>实习经历|In<span>ter</span>ns<span>hi</span>p ex<span>per</span>ie<span>nc</span>e</br><span>___</span></h2>
     	</br>
     	</br>
-        <p>2017.06.20-2017.06.30&nbsp;&nbsp;湖南软评信息技术有限公司&nbsp;&nbsp;Java开发工程师</p>
+        <h4>2017.10.23-2018.02.25&nbsp;&nbsp;衡阳镭目科技有限责任公司&nbsp;&nbsp;实习Java开发工程师</h4>
         </br>
-        <p>1.开发环境：</p>
+        <p>1.项目名称：</p>
+        <P>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1.1《Ramon远程实时数据监控系统》	
+        </P>
+        <p>1.1.1开发环境：</p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Windows 7 x64/MyEclipse 10/Tomcat 7x/JDK 7/SQL Server/Navicat/STEP7/DeviceSimulator/ConfigureVirtual SerialPortDriver/网络摄像机/采集卡/无线网卡。
+        </p>
+        <p>1.1.2核心技术：</p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        JavaWeb/TCP/Java Excel Api/多线程通信。
+        </p>
+        <p>1.1.3项目描述：</p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        主要是公司搭建大数据平台，通过远程数据采集并永久化保存数据，通过算法作出海量数据分析，以此来确定系统的稳定性及可预期的故障方位。
+        </p>
+        <p>1.1.4项目职责：</p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        负责保留Access中高级参数配置文件（DataConfig.mdb），迁移数据储存文件（Data.mdb）数据至SQL Server数据库；使用缓冲区及多线程通信来控制远程数据采集速率与Access数据库数据存储速率相对一致，避免数据溢出或丢失；使用Java Excel Api用于导入一些外部数据。
+        </p>
+        </br>
+        <p>2.项目名称：</p>
+        <P>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        2.1《Ramon方坯非正弦振动控制系统》	
+        </P>
+        <p>2.1.1开发环境：</p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Windows 7 x64/Eclipse/Tomcat 7/JDK 7/STEP7/DeviceSimulator/ConfigureVirtual SerialPortDriver。
+        </p>
+        <p>2.1.2核心技术：</p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        HTML/CSS/JavaWeb/TCP/PLC/MySQL。
+        </p>
+        <p>2.1.3项目描述：</p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       Ramon结晶器电动非正弦振动系统采用大功率数字伺服电动缸直接推动振动框架和结晶器，利用板簧或滚轮导向，实现正弦或非正弦振动，因而为实现非正弦振动则需要在软件界面上设置“高级参数”，并且采集各设备的实时状态或是作出曲线分析，如：参数设置模块、数据采集模块、数据处理模块等等。
+        </p>
+        <p>2.1.4项目职责：</p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         主要是利用IO（输入输出）以及标识符设置系统的“高级参数”，使用Prodave6提供的方法连接PLC读取M点信号，如：Sin（寻源点指示灯）：0.21.6，既是寻源点灯亮或是DB块数据，建立STEP7仿真器DB块数值，如：Float：0.100.20即可获取电动缸位置。
+        </p>
+        </br>
+        </br>
+        <img src="images/ramon.PNG">
+        <p>（*注：公司地址:	湖南省衡阳市华新开发区芙蓉路21号）</p>
+    </div>
+    </div>
+    </div>
+   	<div class="row clearfix" id="practices" style="margin-left:-125px;margin-right: -125px">
+	<div class="col-md-12 column">
+    <div style="margin-bottom: 50px">
+    	</br>
+        <h4>2017.06.20-2017.06.30&nbsp;&nbsp;湖南软评信息技术有限公司&nbsp;&nbsp;Java开发工程师</h4>
+        </br>
+        <p>1.项目名称：</p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        《企业信息管理系统》
+        </p>
+        <p>2.开发环境：</p>
         <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         Windows 8.1 x64/MyEclipse 10/Tomcat 7/JDK 7。
         </p>
-        <p>2.核心技术：</p>
+        <p>3.核心技术：</p>
         <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         Html5/Css3/JavaScript/JQuery/EasyUI/Bootstrap/JavaWeb/Spring/SpringMVC/Mybatis。
         </p>
-        <p>3.项目描述：</p>
+        <p>4.项目描述：</p>
         <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         经过《企业信息管理系统》系统注册的员工，可以进行日常的工作考勤，管理员具有最高权限，可以管理整个系统的功能，包括：授予权限、增删改查菜单、增删改查角色及考勤管理。
         </p>
-        <p>4.项目职责：</p>
+        <p>5.项目职责：</p>
         <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         在项目组长的带领下，主要负责《企业员工管理系统》的视图层及授权功能的开发；此项目基于JavaWeb三层架构，编写javascript与javaWeb中的EL表达式相结合，并通过EL表达式的方式将后台逻辑数据返回给视图层，同时，通过Mysql中的角色状态置1或0，来实现了不同角色的权限控制及相关视图的显示。
